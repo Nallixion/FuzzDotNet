@@ -1,7 +1,7 @@
 <Project>
     <!-- General -->
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net8</TargetFramework>
         <LangVersion>9.0</LangVersion>
         <Nullable>enable</Nullable>
         <Packable>false</Packable>
@@ -13,11 +13,11 @@
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <Authors>Ethan Shea</Authors>
+        <Authors>Mark Burton</Authors>
         <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
         <Description>FuzzDotNet is a library enabling fuzz-testing and the generation of synthetic application data.</Description>
         <PackageTags>testing;FuzzDotNet;unit test;fuzz test</PackageTags>
-        <PackageProjectUrl>https://github.com/pensono/FuzzDotNet</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/Nallixion/FuzzDotNet</PackageProjectUrl>
     </PropertyGroup>
 
     <ItemGroup>
