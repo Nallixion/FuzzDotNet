@@ -9,7 +9,7 @@
   <!-- Runtime -->
   <ItemGroup>
     <PackageReference Update="MathNet.Numerics" Version="5.0.0" />
-    <PackageReference Update="NaughtyStrings" Version="2.4.3" />
+    <PackageReference Update="NaughtyStrings" Version="2.4.1" />
   </ItemGroup>
 
   <!-- Runtime - Integrations -->
