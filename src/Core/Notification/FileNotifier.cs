@@ -22,7 +22,11 @@ namespace FuzzDotNet.Core.Notification
             var formatted = Formatter.Format(counterexample);
             var path = _pathGenerator(counterexample);
 
+#if NET8_0_OR_GREATER
             await File.WriteAllTextAsync(path, formatted, Encoding.UTF8);
+#else
+            File.WriteAllText(path, formatted, Encoding.UTF8);
+#endif
         }
     }
 }

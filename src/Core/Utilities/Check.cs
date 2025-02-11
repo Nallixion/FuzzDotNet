@@ -22,8 +22,11 @@ namespace FuzzDotNet.Core.Utilities
                 throw new ArgumentException(message);
             }
         }
-
+#if NET8_0_OR_GREATER
         public static void IsNotNull([NotNull] object? obj, string? message = null)
+#else
+        public static void IsNotNull( object? obj, string? message = null)
+#endif
         {
             if (obj == null)
             {
